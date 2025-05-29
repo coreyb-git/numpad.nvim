@@ -17,7 +17,7 @@ end
 
 local function setLayer1()
 	layer = 1
-	vim.notify("Numpad bindings.  Press a to exit.")
+	vim.notify("Numpad bindings.  Press " .. Config.Escape .. " to exit.")
 end
 
 function M.setup(opts)
@@ -25,8 +25,16 @@ function M.setup(opts)
 		Config[i] = v
 	end
 
-	fromchars = Config.TopRow .. Config.MiddleRow .. Config.BottomRow .. Config.Zero .. Config.Dot
-	tochars = "7894561230."
+	fromchars = Config.TopRow
+		.. Config.MiddleRow
+		.. Config.BottomRow
+		.. Config.Zero
+		.. Config.Dot
+		.. Config.Addition
+		.. Config.Subtraction
+		.. Config.Multiplication
+		.. Config.Division
+	tochars = "7894561230.+-*/"
 
 	vim.keymap.set("i", Config.Trigger, setLayer1, {})
 end
@@ -55,14 +63,5 @@ vim.api.nvim_create_autocmd("InsertCharPre", {
 		end
 	end,
 })
-
---[[vim.api.nvim_create_autocmd("InsertEnter", {
-				callback = function()
-					if package.loaded["nvim-autopairs"] then
-						require("nvim-autopairs").disable()
-					end
-				end,
-			})]]
---
 
 return M

@@ -4,6 +4,10 @@ return {
 	BottomRow = "kl;",
 	Zero = ",",
 	Dot = ".",
+	Addition = "+",
+	Subtraction = "-",
+	Multiplication = "*",
+	Division = "/",
 
 	Trigger = "kk",
 	Escape = "j",
