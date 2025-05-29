@@ -1,8 +1,8 @@
-Rebind a section of the keyboard to become a numpad after pressing the *Trigger* sequence of keys while in INSERT mode.  Escape from numpad mode by by pressing the *Escape* sequence, or by leaving INSERT mode.
+Rebind a section of the keyboard to become a number pad after pressing the *Trigger* sequence of keys while in INSERT mode.  Escape from numpad mode by by pressing the *Escape* sequence, or by leaving INSERT mode.
 
 Why?
 
-Not all keyboards have a numpad, and it's far easier to type long numbers on a numpad than on the top numerical row.
+Not all keyboards have a number pad, and it's far easier to type long numbers on a numpad than on the top numerical row.
 
 ```
 return {
