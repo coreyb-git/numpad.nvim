@@ -1,4 +1,4 @@
-Rebind a section of the keyboard to become a number pad after pressing the *Trigger* sequence of keys while in INSERT mode.  Escape from numpad mode by by pressing the *Escape* sequence, or by leaving INSERT mode.
+Rebind a section of the keyboard to become a number pad after pressing the *Trigger* sequence of keys while in INSERT mode.  Escape from numpad mode by pressing the *Escape* sequence, or by leaving INSERT mode.
 
 Why?
 
