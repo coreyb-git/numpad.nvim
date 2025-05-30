@@ -8,14 +8,23 @@ Not all keyboards have a number pad, and it's far easier to type long numbers on
 return {
   "coreyb-git/numpad.nvim",
 	opts = {
-	  TopRow = "890",
-	  MiddleRow = "iop",
-	  BottomRow = "kl;",
-	  Zero = ",",
-	  Dot = ".",
+		TopRow = "uio",
+		MiddleRow = "jkl",
+		BottomRow = "m,.",
+		Zero = " ",
+		Dot = "h",
+		Addition = "a",
+		Subtraction = "s",
+		Multiplication = "d",
+		Division = "f",
 
-	  Trigger = "kk",
-	  Escape = "j",
+		Trigger = "kk",
+		Escape = "q",
+
+		--UnbindOnEnter = { "jk" },  --uncomment if you use the typical jk insert mode escape sequence
+		--BindOnEnter = { { "", "" }, },
+		--UnbindOnExit = { "" },
+		--BindOnExit = { { "jk", "<ESC>" }, },  --uncomment if using jk
 	},
 	lazy = false,
 }
