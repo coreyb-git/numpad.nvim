@@ -12,6 +12,8 @@ return {
 	Trigger = "kk",
 	Escape = "q",
 
+	ExtraSpacebar = "g",
+
 	UnbindOnEnter = {},
 	BindOnEnter = {},
 	UnbindOnExit = {},

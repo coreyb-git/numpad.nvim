@@ -21,6 +21,8 @@ return {
 		Trigger = "kk",
 		Escape = "q",
 
+		ExtraSpacebar = "g",  --because space is rebound to 0
+
 		--UnbindOnEnter = { "jk" },  --uncomment if you use the typical jk insert mode escape sequence
 		--BindOnEnter = { { "", "" }, },
 		--UnbindOnExit = { "" },

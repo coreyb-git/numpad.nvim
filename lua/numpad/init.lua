@@ -83,7 +83,11 @@ vim.api.nvim_create_autocmd("InsertCharPre", {
 					local to = string.sub(tochars, i, i)
 					vim.v.char = to
 				else
-					vim.v.char = "" --don't print anything if it isn't a mapped key
+					if vim.v.char == Config.ExtraSpacebar then
+						vim.v.char = " "
+					else
+						vim.v.char = "" --don't print anything if it isn't a mapped keyk
+					end
 				end
 			end
 		end
